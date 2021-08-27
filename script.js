@@ -19,7 +19,7 @@ function show(id) {
 function showDropdown(node) {
     var dropdown = node.nextElementSibling;
     if (dropdown.style.display == "block") {
-        dropdown.style.display = "none";
+        dropdown.style.display = "";
     }
 
     else {
