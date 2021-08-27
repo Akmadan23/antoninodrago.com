@@ -24,15 +24,9 @@ h2 {
     padding-bottom: 16px;
 }
 
-p.regular {
+p {
     text-indent: 32px;
     padding-bottom: 8px;
-}
-
-p.list {
-    text-indent: -32px;
-    padding-left: 32px;
-    padding-bottom: 16px;
 }
 
 a, a:visited {
@@ -44,6 +38,11 @@ a, a:visited {
 a:hover {
     color: var(--background);
     background-color: var(--accentMedium);
+}
+
+li {
+    margin-left: 32px;
+    padding-bottom: 8px;
 }
 
 button {
