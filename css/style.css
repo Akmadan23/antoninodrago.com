@@ -118,8 +118,6 @@ button {
     height: 40px;
     width: 40px;
     cursor: pointer;
-    display: inline-block;
-    float: right;
 }
 
 .flags img {
@@ -173,21 +171,9 @@ button {
     display: none;
 }
 
-@media screen and (min-width: 1251px) {
-    h1 {
-        font-size: 32px;
-        line-height: 64px;
-        display: inline-block;
-    }
-
+@media screen and (min-width: 721px) {
     .header-wrap {
         height: 64px;
-    }
-
-    .header {
-        left: 50%;
-        width: 1200px;
-        margin-left: -600px;
     }
 
     .menu {
@@ -197,57 +183,65 @@ button {
         display: inline-block;
     }
 
-    .main {
-        left: 50%;
-        width: 1200px;
-        margin-left: -600px;
-        padding-top: 80px;
-    }
-
-    .dropdown {
-        width: 160px;
-    }
-
-    .dropdown-content {
-        min-width: 160px;
-    }
-}
-
-@media screen and (max-width: 1250px) and (min-width: 721px) {
-    h1 {
-        font-size: 24px;
-        line-height: 64px;
+    .flags {
         display: inline-block;
+        float: right;
     }
 
-    .header-wrap {
-        height: 64px;
+    @media screen and (min-width: 1251px) {
+        h1 {
+            font-size: 32px;
+            line-height: 64px;
+            display: inline-block;
+        }
+
+        .header {
+            left: 50%;
+            width: 1200px;
+            margin-left: -600px;
+        }
+
+        .main {
+            left: 50%;
+            width: 1200px;
+            margin-left: -600px;
+            padding-top: 80px;
+        }
+
+        .dropdown {
+            width: 160px;
+        }
+
+        .dropdown-content {
+            min-width: 160px;
+        }
     }
 
-    .header {
-        left: 5%;
-        width: 90%;
-    }
+    @media screen and (max-width: 1250px) and (min-width: 721px) {
+        h1 {
+            font-size: 24px;
+            line-height: 64px;
+            display: inline-block;
+        }
 
-    .menu {
-        position: absolute;
-        height: 100%;
-        right: 0;
-        display: inline-block;
-    }
+        .header {
+            left: 5%;
+            width: 90%;
+        }
 
-    .main {
-        left: 5%;
-        width: 90%;
-        padding-top: 80px;
-    }
+        .main {
+            left: 5%;
+            width: 90%;
+            padding-top: 80px;
+        }
 
-    .dropdown {
-        width: 120px;
-    }
+        .dropdown {
+            width: 120px;
+        }
 
-    .dropdown-content {
-        min-width: 120px;
+        .dropdown-content {
+            min-width: 120px;
+        }
     }
 }
 
@@ -288,6 +282,12 @@ button {
 
     .dropdown-content {
         min-width: 120px;
+    }
+
+    .flags {
+        display: block;
+        top: 0px;
+        right: 0px;
     }
 }
 
