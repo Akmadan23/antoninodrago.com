@@ -16,6 +16,22 @@ function show(id) {
     document.getElementById(id).style.display = "block";
 }
 
+function toggleSideMenu(icon) {
+    var menu = document.getElementById("side-menu");
+
+    if (menu.className == "in") {
+        menu.className = "out";
+        icon.classList.remove("fa-times");
+        icon.classList.add("fa-bars");
+    }
+
+    else {
+        menu.className = "in";
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-times");
+    }
+}
+
 function switchLang() {
     var it = document.getElementsByClassName("it");
     var en = document.getElementsByClassName("en");

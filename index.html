@@ -4,8 +4,8 @@
     <title>Antonino Drago</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="SHORTCUT ICON" href="images/logo/logo-redwhite-round.png"/>
-    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <script src="script.js"></script>
 </head>
 
@@ -14,6 +14,10 @@
         <div class="header-wrap">
             <div class="header">
                 <h1>Antonino Drago</h1>
+
+                <div class="menu-icon">
+                    <i class="fas fa-bars fa-2x" onclick="toggleSideMenu(this)"></i>
+                </div>
 
                 <div onclick="switchLang()" title="Switch language" class="flags">
                     <div class="it">
@@ -34,7 +38,7 @@
                         </div><!-- .dropdown -->
 
                         <div class="dropdown">
-                            <a href="#act-menu"><span onclick="show('act-menu')">Attività</span></a>
+                            <span>Attività</span>
                             <div class="dropdown-content">
                                 <a href="#act1" onclick="show('act1')">Scientifiche</a>
                                 <a href="#act2" onclick="show('act2')">Pace e Nonviolenza</a>
@@ -42,7 +46,7 @@
                         </div><!-- .dropdown -->
 
                         <div class="dropdown">
-                            <a href="#pub-menu"><span onclick="show('pub-menu')">Pubblicazioni</span></a>
+                            <span>Pubblicazioni</span>
                             <div class="dropdown-content">
                                 <a href="#pub1" onclick="show('pub1')">Scienza</a>
                                 <a href="#pub2" onclick="show('pub2')">Pace e Nonviolenza</a>
@@ -61,7 +65,7 @@
                         </div><!-- .dropdown -->
 
                         <div class="dropdown">
-                            <a href="#act-menu"><span onclick="show('act-menu')">Activities</span></a>
+                            <span>Activities</span>
                             <div class="dropdown-content">
                                 <a href="#act1" onclick="show('act1')">Scientific</a>
                                 <a href="#act2" onclick="show('act2')">Peace and Nonviolence</a>
@@ -69,7 +73,7 @@
                         </div><!-- .dropdown -->
 
                         <div class="dropdown">
-                            <a href="#pub-menu"><span onclick="show('pub-menu')">Publications</span></a>
+                            <span>Publications</span>
                             <div class="dropdown-content">
                                 <a href="#pub1" onclick="show('pub1')">Scientific</a>
                                 <a href="#pub2" onclick="show('pub2')">Peace and Nonviolence</a>
@@ -109,44 +113,6 @@
                 <p>Experience of research and publications in Cybernetics, Automata theory, Logic, Biology, Epistemology, History and Foundations of Sciences, Bioethics, Social Sciences, Political Sciences, Linguistic, Philosophy, Theology. Author of almost five hundred scientific publications and a dozen books, whose the last one is Dalla Storia della Fisica ai Fondamenti della Scienza, Aracne, Roma, 2017 (From the History of Physics to the Foundations of Science). <a href="https://orcid.org/0000-0001-6002-1258" target="_blank">Details</a></p>
             </div><!-- .en -->
         </div><!-- #home.main -->
-
-        <div id="act-menu" class="main">
-            <div class="it">
-                <h2>Attività</h2>
-                <ul>
-                    <li><a href="#act1" onclick="show('act1')">Attività scientifiche</a></li>
-                    <li><a href="#act2" onclick="show('act2')">Attività per la Pace e la Nonviolenza</a></li>
-                </ul>
-            </div><!-- .it -->
-
-            <div class="en">
-                <h2>Activities</h2>
-                <ul>
-                    <li><a href="#act1" onclick="show('act1')">Scientific activities</a></li>
-                    <li><a href="#act2" onclick="show('act2')">Peace and Nonviolence activities</a></li>
-                </ul>
-            </div><!-- .en -->
-        </div><!-- #act-menu.main -->
-
-        <div id="pub-menu" class="main">
-            <div class="it">
-                <h2>Pubblicazioni</h2>
-                <ul>
-                    <li><a href="#pub1" onclick="show('pub1')">Pubblicazioni scientifiche (in inglese)</a></li>
-                    <li><a href="#pub2" onclick="show('pub2')">Pubblicazioni per la Pace e la Nonviolenza</a></li>
-                    <li><a href="#pub3" onclick="show('pub3')">Inediti</a></li>
-                </ul>
-            </div><!-- .it -->
-
-            <div class="en">
-                <h2>Publications</h2>
-                <ul>
-                    <li><a href="#act1" onclick="show('act1')">Scientific publications (in English)</a></li>
-                    <li><a href="#act2" onclick="show('act2')">Peace and Nonviolence publications</a></li>
-                    <li><a href="#pub3" onclick="show('pub3')">Unpublished</a></li>
-                </ul>
-            </div><!-- .en -->
-        </div><!-- #pub-menu.main -->
 
         <div id="act1" class="main">
             <div class="it">
@@ -216,7 +182,7 @@
 
         <div id="pub1" class="main">
             <div class="it">
-                <h2>Publicazioni scientifiche in inglese</h2>
+                <h2>Pubblicazioni scientifiche in inglese</h2>
             </div><!-- .it -->
 
             <div class="en">
@@ -227,7 +193,7 @@
                 <li>Anti-Dual Logical Functions, <em>Calcolo,</em> 3 (1966) p.l-3 (MR 34 #5581).</li>
                 <li>Rules to find the partition ofn with maximum l.c.m., <em>Atti Seni. Mat. Fis. Modena</em>, 16 (1967) 286-298.</li>
                 <li>A new representation of linear and affine circuits, <em>JCC Bulletin</em>, 6 (1967), 133-147 (in coli. con A. de Luca).</li>
-                <li>Observations on Sapphirinides (Copepoda), <em>Pubbl. </em><em>Staz. Zool. Napoli,</em> 37 (1969). 415-420 (con A. Fernandez Perez y Talens e E. Onesto).</li>
+                <li>Observations on Sapphirinides (Copepoda), <em>Pubbl. </em><em>Staz. Zool. Napoli</em>, 37 (1969). 415-420 (con A. Fernandez Perez y Talens e E. Onesto).</li>
                 <li>A historical critique to Western science, <em>Int. Peace Res. Newsletter</em>, 16, n. 3 (1978), pp. 32-37 (anche in <em>Bull. Pop. Patr. 5ci. &amp; Techn</em>. n. 1, 1980).</li>
                 <li>Two ways to link science teaching and disarmament education, in M. Haavelsrud (ed.): <em>Approaching Disannament Education</em>, IPC Wesbusy House, Londra, 1980, pp. 71-80.</li>
                 <li>Dimensional Theory and Constructive Mathematics, <em>Lett. Nuovo Cim</em>., 37 (1983) pp. 409-412.</li>
@@ -544,6 +510,18 @@
                 <p><em>Work in progress...</em></p>
             </div><!-- .en -->
         </div><!-- #links.main -->
+
+        <div id="side-menu">
+            <a href="#home"><h3 onclick="show('home')">Home</h3></span></a>
+            <h3>Attività</h3>
+            <a href="#act1"><h4 onclick="show('act1')">Scienza</h4></a>
+            <a href="#act2"><h4 onclick="show('act2')">Pace e Nonviolenza</h4></a>
+            <h3>Pubblicazioni</h3>
+            <a href="#pub1"><h4 onclick="show('pub1')">Scienza</h4></a>
+            <a href="#pub2"><h4 onclick="show('pub2')">Pace e Nonviolenza</h4></a>
+            <a href="#pub3"><h4 onclick="show('pub3')">Inediti</h4></a>
+            <a href="#links"><h3 onclick="show('links')">Collegamenti</h3></a>
+        </div><!-- #side-menu -->
     </div><!--#page-->
 </body>
 </html>

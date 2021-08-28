@@ -3,6 +3,7 @@
 html * {
     margin: 0;
     padding: 0;
+    outline: none;
     transition: 0.2s ease;
 
     scrollbar-color: var(--accentMedium) transparent;
@@ -13,10 +14,6 @@ body {
     color: var(--text);
     background-color: var(--background);
     font-family: "Candara";
-}
-
-h1 {
-    color: var(--background);
 }
 
 h2 {
@@ -54,8 +51,23 @@ li {
     padding-bottom: 8px;
 }
 
-button {
-    outline: none;
+#side-menu h3 {
+    color: var(--background);
+    font-size: 24px;
+    padding-left: 32px;
+    padding-top: 16px;
+}
+
+#side-menu h4 {
+    color: var(--background);
+    padding-left: 64px;
+    padding-top: 8px;
+}
+
+#side-menu a,
+#side-menu a:hover,
+#side-menu a:visited {
+    background-color: transparent;
 }
 
 .dropdown {
@@ -108,7 +120,6 @@ button {
 }
 
 .main img {
-    width: 200px;
     margin: 16px;
     float: right;
 }
@@ -119,13 +130,33 @@ button {
     display: block;
 }
 
+#side-menu {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    padding-top: 80px;
+    background-color: var(--text);
+    transform: translateX(-100%);
+    display: block;
+}
+
+#side-menu.in {
+    animation: in 0.5s both;
+    -webkit-animation: in 0.5s both;
+}
+
+#side-menu.out {
+    animation: out 0.5s both;
+    -webkit-animation: out 0.5s both;
+}
+
 /*================ FLAGS ================*/
 
 .flags {
     position: absolute;
-    margin: 16px;
-    height: 40px;
-    width: 40px;
+    height: 32px;
+    width: 32px;
     cursor: pointer;
 }
 
@@ -135,7 +166,8 @@ button {
 
 .flag1 {
     position: absolute;
-    width: 32px;
+    width: 28px;
+    margin-top: -4px;
     left: 0;
     top: 0;
 }
@@ -163,7 +195,9 @@ button {
 .header-wrap {
     position: fixed;
     width: 100%;
+    height: 64px;
     top: 0;
+    color: var(--background);
     background: var(--greyDark);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     z-index: 1;
@@ -177,14 +211,11 @@ button {
 
 .main {
     position: relative;
+    padding-top: 80px;
     display: none;
 }
 
 @media screen and (min-width: 721px) {
-    .header-wrap {
-        height: 64px;
-    }
-
     .menu {
         position: absolute;
         height: 100%;
@@ -192,9 +223,22 @@ button {
         display: inline-block;
     }
 
+    .menu-icon {
+        display: none;
+    }
+
+    #side-menu {
+        display: none;
+    }
+
     .flags {
+        margin: 16px;
         display: inline-block;
         float: right;
+    }
+
+    .main img {
+        width: 200px;
     }
 
     @media screen and (min-width: 1251px) {
@@ -214,7 +258,6 @@ button {
             left: 50%;
             width: 1200px;
             margin-left: -600px;
-            padding-top: 80px;
         }
 
         .dropdown {
@@ -241,7 +284,6 @@ button {
         .main {
             left: 5%;
             width: 90%;
-            padding-top: 80px;
         }
 
         .dropdown {
@@ -256,14 +298,10 @@ button {
 
 @media screen and (max-width: 720px) {
     h1 {
-        font-size: 32px;
+        font-size: 24px;
         line-height: 64px;
         text-align: center;
         display: block;
-    }
-
-    .header-wrap {
-        height: 96px;
     }
 
     .header {
@@ -272,17 +310,25 @@ button {
     }
 
     .menu {
+        display: none;
+    }
+
+    .menu-icon {
         position: absolute;
-        width: 100%;
-        height: 32px;
-        bottom: 0;
+        top: 0px;
+        left: 0px;
+        margin-top: 16px;
+        cursor: pointer;
         display: block;
     }
 
     .main {
         left: 5%;
         width: 90%;
-        padding-top: 112px;
+    }
+
+    .main img {
+        width: 120px;
     }
 
     .dropdown {
@@ -294,9 +340,10 @@ button {
     }
 
     .flags {
-        display: block;
         top: 0px;
         right: 0px;
+        margin-top: 16px;
+        display: block;
     }
 }
 
@@ -321,3 +368,38 @@ button {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--accentLight); 
 }
+
+/*================ ANIMATIONS ================*/
+
+@keyframes in {
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes in {
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes out {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes out {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
