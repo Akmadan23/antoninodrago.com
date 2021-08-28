@@ -67,6 +67,7 @@ li {
 #side-menu a,
 #side-menu a:hover,
 #side-menu a:visited {
+    text-decoration: underline;
     background-color: transparent;
 }
 
