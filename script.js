@@ -16,17 +16,6 @@ function show(id) {
     document.getElementById(id).style.display = "block";
 }
 
-function showDropdown(node) {
-    var dropdown = node.nextElementSibling;
-    if (dropdown.style.display == "block") {
-        dropdown.style.display = "";
-    }
-
-    else {
-        dropdown.style.display = "block";
-    }
-}
-
 function switchLang() {
     var it = document.getElementsByClassName("it");
     var en = document.getElementsByClassName("en");

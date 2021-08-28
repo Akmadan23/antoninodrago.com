@@ -34,7 +34,7 @@
                         </div><!-- .dropdown -->
 
                         <div class="dropdown">
-                            <span onclick="showDropdown(this)">Attività</span>
+                            <a href="#act-menu"><span onclick="show('act-menu')">Attività</span></a>
                             <div class="dropdown-content">
                                 <a href="#act1" onclick="show('act1')">Scientifiche</a>
                                 <a href="#act2" onclick="show('act2')">Pace e Nonviolenza</a>
@@ -42,7 +42,7 @@
                         </div><!-- .dropdown -->
 
                         <div class="dropdown">
-                            <span onclick="showDropdown(this)">Pubblicazioni</span>
+                            <a href="#pub-menu"><span onclick="show('pub-menu')">Pubblicazioni</span></a>
                             <div class="dropdown-content">
                                 <a href="#pub1" onclick="show('pub1')">Scienza</a>
                                 <a href="#pub2" onclick="show('pub2')">Pace e Nonviolenza</a>
@@ -61,7 +61,7 @@
                         </div><!-- .dropdown -->
 
                         <div class="dropdown">
-                            <span onclick="showDropdown(this)">Activities</span>
+                            <a href="#act-menu"><span onclick="show('act-menu')">Activities</span></a>
                             <div class="dropdown-content">
                                 <a href="#act1" onclick="show('act1')">Scientific</a>
                                 <a href="#act2" onclick="show('act2')">Peace and Nonviolence</a>
@@ -69,7 +69,7 @@
                         </div><!-- .dropdown -->
 
                         <div class="dropdown">
-                            <span onclick="showDropdown(this)">Publications</span>
+                            <a href="#pub-menu"><span onclick="show('pub-menu')">Publications</span></a>
                             <div class="dropdown-content">
                                 <a href="#pub1" onclick="show('pub1')">Scientific</a>
                                 <a href="#pub2" onclick="show('pub2')">Peace and Nonviolence</a>
@@ -110,6 +110,44 @@
             </div><!-- .en -->
         </div><!-- #home.main -->
 
+        <div id="act-menu" class="main">
+            <div class="it">
+                <h2>Attività</h2>
+                <ul>
+                    <li><a href="#act1" onclick="show('act1')">Attività scientifiche</a></li>
+                    <li><a href="#act2" onclick="show('act2')">Attività per la Pace e la Nonviolenza</a></li>
+                </ul>
+            </div><!-- .it -->
+
+            <div class="en">
+                <h2>Activities</h2>
+                <ul>
+                    <li><a href="#act1" onclick="show('act1')">Scientific activities</a></li>
+                    <li><a href="#act2" onclick="show('act2')">Peace and Nonviolence activities</a></li>
+                </ul>
+            </div><!-- .en -->
+        </div><!-- #act-menu.main -->
+
+        <div id="pub-menu" class="main">
+            <div class="it">
+                <h2>Pubblicazioni</h2>
+                <ul>
+                    <li><a href="#pub1" onclick="show('pub1')">Pubblicazioni scientifiche (in inglese)</a></li>
+                    <li><a href="#pub2" onclick="show('pub2')">Pubblicazioni per la Pace e la Nonviolenza</a></li>
+                    <li><a href="#pub3" onclick="show('pub3')">Inediti</a></li>
+                </ul>
+            </div><!-- .it -->
+
+            <div class="en">
+                <h2>Publications</h2>
+                <ul>
+                    <li><a href="#act1" onclick="show('act1')">Scientific publications (in English)</a></li>
+                    <li><a href="#act2" onclick="show('act2')">Peace and Nonviolence publications</a></li>
+                    <li><a href="#pub3" onclick="show('pub3')">Unpublished</a></li>
+                </ul>
+            </div><!-- .en -->
+        </div><!-- #pub-menu.main -->
+
         <div id="act1" class="main">
             <div class="it">
                 <h2>Attività scientifiche</h2>
@@ -125,6 +163,7 @@
         <div id="act2" class="main">
            <div class="it">
                 <h2>Attività per la Pace e la Nonviolenza</h2>
+
                 <ul>
                     <li><b>1976</b>: Fondazione con M. Borrelli a Napoli dell'<em>Italian Peace Research Institute</em>, affiliated to Galtung's IPRA <br> Partecipation in <em>IPRA conventions</em> (Dubrovnik 1976 and 1983, Essex 1986, Groningen 1988, Kyoto 1992, Malta 1994)</li>
                     <li><b>1980-1989:</b> <em>60% Founding</em> (Departmental Research) in "Science and War" (research on military research funding, mathematical models of conflicts, alternative defense, peace education)</li>
@@ -150,6 +189,7 @@
 
             <div class="en">
                 <h2>Activities for Peace and Nonviolence</h2>
+
                 <ul>
                     <li><b>1976</b>: Foundation, with M. Borrelli in Naples (IT) of <em>Italian Peace Research Institute</em>, affiliato all'IPRA di Galtung<br> Partecipazione ai <em>convegni IPRA</em> (Dubrovnik 1976 e 1983, Essex 1986, Groningen 1988, Kyoto 1992, Malta 1994)</li>
                     <li><b>1980-1989:</b> <em>Finanziamenti 60%</em> (Ricerca Dipartimentale) su "Scienza e Guerra" (ricerche sui finanziamenti militari alla ricerca, modelli matematici dei conflitti, difesa alternativa, educazione alla pace)</li>
@@ -340,6 +380,7 @@
                 <h2>Pubblicazioni su Pace e Nonviolenza</h2>
                 <h3>Maggiori dettagli sui contenuti delle pubblicazioni sui temi della pace e della nonviolenza</h3>
                 <p class="quote">Piuttosto che elencare le pubblicazioni relative al tema della pace, educazione alla pace e nonviolenza,<br>ritengo utile indicare solo gli argomenti trattati, aggiungendo il relativo risultato.</p><br>
+
                 <ul>
                     <li><b>Studi sui Maestri della nonviolenza</b>: Gandhi, Capitini, Lanza del Vasto, D. Milani</li>
                     <li><b>Educazione alla Pace e alla nonviolenza</b>: definizione, proposte di insegnamento delle materie, in particolare della storia,</li>
@@ -352,9 +393,10 @@
                     <li><b>Storia del rapporto Scienza e Guerra</b>: ricostruzione dei rapporti teorici</li>
                     <li><b>Modelli scientifici dei conflitti e DPN</b><li>
                 </ul>
-                <p><b>RISULTATO PRINCIPALE</b>: <em>fondamento scientifico per la nonviolenza, la DPN e la sua strategia</em></p>
-                <br><br>
+
+                <p><b>RISULTATO PRINCIPALE</b>: <em>fondamento scientifico per la nonviolenza, la DPN e la sua strategia</em></p><br><br>
                 <h3>Opere in inglese o in francese o in spagnolo su Lanza del Vasto, Non violenza, Arca</h3><br>
+
                 <ul>
                     <li>Two ways to link science teaching and disarmament education, in M. Haavelsrud (ed.): <b>Approaching disarmament education</b>, Wesboury House, IPC, London, 1981, 71-80</li>
                     <li>Marxism and Nonviolence, <em>Gandhi Marg</em>, <b>6</b>, May 1984, 72-82 (con F. Amato)</li>
@@ -413,6 +455,7 @@
                 <h2>Peace and Nonviolence publications</h2>
                 <h3>More details on the contents of the publications on the themes of peace and nonviolence</h3>
                 <p class="quote">I find it useful to indicate the topics covered, adding the relative result.</p><br>
+
                 <ul>
                     <li><b>Studies on the Masters of non-violence</b>: Gandhi, Capitini, Lanza del Vasto, D. Milani </li>
                     <li><b>Education for Peace and non-violence</b>: definition, teaching proposals of the subjects, in particular history,</li>
@@ -425,9 +468,9 @@
                     <li><b>History of the Science and War relationship</b>: reconstruction of theoretical relationships</li>
                     <li><b>Scientific models of conflicts and People non-violent defence</b></li>
                 </ul>
-                <p><b>MAIN RESULT</b>: <em>scientific foundation for nonviolence, People non-violent defence and its strategy</em></p>
-                <br><br>
+                <p><b>MAIN RESULT</b>: <em>scientific foundation for nonviolence, People non-violent defence and its strategy</em></p><br><br>
                 <h2>List of the publications on <em>Pace Education</em></h2>
+
                 <ul>
                     <li>Two ways to link science teaching and disarmament education, in M. Haavelsrud (ed.): <em>Approaching disarmament education</em>, Wesboury House, IPC, London, 1981, 71-80</li>
                     <li>L'esperienza del corso universitario su "Scienza e Guerra", in F. Bevilacqua e R. Russo (eds.): <em>Atti III Congr. Naz. Storia Fisica, (Palermo)</em>, Pavia, 1983, 406-411</li>
