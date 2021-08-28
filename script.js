@@ -17,7 +17,7 @@ function show(id) {
     document.getElementById(id).style.display = "block";
 
     if (menu.className == "in") {
-        toggleSlideMenu();
+        toggleSideMenu();
     }
 }
 
