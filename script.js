@@ -8,16 +8,22 @@ function start() {
 
 function show(id) {
     var x = document.getElementsByClassName("main");
+    var menu = document.getElementById("side-menu");
 
     for (var i = 0; i < x.length; i++) {
         x[i].style.display = "none";
     }
 
     document.getElementById(id).style.display = "block";
+
+    if (menu.className == "in") {
+        toggleSlideMenu();
+    }
 }
 
 function toggleSideMenu(icon) {
     var menu = document.getElementById("side-menu");
+    var icon = document.getElementById("icon");
 
     if (menu.className == "in") {
         menu.className = "out";
