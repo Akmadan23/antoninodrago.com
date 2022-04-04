@@ -46,6 +46,10 @@ a:hover {
     background-color: var(--accentMedium);
 }
 
+li > a {
+    text-decoration: underline;
+}
+
 li {
     margin-left: 32px;
     padding-bottom: 8px;
