@@ -38,7 +38,6 @@ p.quote {
 a, a:visited {
     color: var(--accentMedium);
     cursor: pointer;
-    text-decoration: none;
 }
 
 a:hover {
@@ -46,8 +45,8 @@ a:hover {
     background-color: var(--accentMedium);
 }
 
-li > a {
-    text-decoration: underline;
+.dropdown > a {
+    text-decoration: none;
 }
 
 li {
