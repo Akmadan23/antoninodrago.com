@@ -19,6 +19,9 @@ function show(id) {
     if (menu.className == "in") {
         toggleSideMenu();
     }
+
+    var url = window.location.href.split("#");
+    window.location.href = url[0] + "#" + id;
 }
 
 function toggleSideMenu(icon) {
