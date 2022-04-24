@@ -60,12 +60,14 @@ li {
     font-size: 24px;
     padding-left: 32px;
     padding-top: 16px;
+    cursor: pointer;
 }
 
 #side-menu h4 {
     color: var(--grey2);
     padding-left: 64px;
     padding-top: 8px;
+    cursor: pointer;
 }
 
 #side-menu a,
