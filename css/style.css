@@ -36,20 +36,6 @@ p.quote {
     display: inline-block;
 }
 
-a, a:visited {
-    color: var(--accentMedium);
-    cursor: pointer;
-}
-
-a:hover {
-    color: var(--background);
-    background-color: var(--accentMedium);
-}
-
-.dropdown > a {
-    text-decoration: none;
-}
-
 li {
     margin-left: 32px;
     padding-bottom: 8px;
@@ -68,13 +54,6 @@ li {
     padding-left: 64px;
     padding-top: 8px;
     cursor: pointer;
-}
-
-#side-menu a,
-#side-menu a:hover,
-#side-menu a:visited {
-    text-decoration: underline;
-    background-color: transparent;
 }
 
 .dropdown {
