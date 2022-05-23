@@ -24,7 +24,7 @@ Autore di più di 400 pubblicazioni su: matematica, logica, storia e fondamenti 
 insegnamento delle teorie matematiche e fisiche, teorie della difesa;
 e di vari libri: _Fisica, Didattica, Società_, CLU, Napoli, 1976;
 _Scienza e Guerra_, EGA, Torino, 1983 (con G. Salio); _Matematica della Guerra_, EGA, Torino, 1987;
-_Le due opzioni. per una storia popolare della scienza, _La Meridiana_, Molfetta BA, 1991;
+_Le due opzioni. per una storia popolare della scienza_, La Meridiana, Molfetta (BA), 1991;
 Curatela di _Vent' anni di didattica universitaria di storia della fisica in Italia_, in appendice a
 F. Bevilacqua, (ed.): _Atti del XII Congresso Naz. di Storia della Fisica_, La Goliardica, Pavia, 1993, 289-385;
 _La teoria delle parallele secondo Lobacevskij_, Danilo, Napoli, 1996 (con S. Cicenia);
@@ -55,12 +55,14 @@ il coordinamento degli obiettori Caschi bianchi all'estero.
 
 Ha scritto articoli (i più numerosi su: Notizie dell'Arca, Rocca, Qualevita, Azione Nonviolenta,
 Mosaico di Pace, Il Tetto, Testimonianze) e libri sui temi delle suddette attività (in particolare:
-_Le due opzioni_, La Meridiana, Molfetta BA, 1991, _L’obiezione fiscale. Quale difesa? Quale pace?_,
+_Le due opzioni_, La Meridiana, Molfetta (BA), 1991, _L’obiezione fiscale. Quale difesa? Quale pace?_,
 EGA, Torino, 1987 (con G. Mattai); e ha curato gli atti di alcuni convegni nazionali sulla difesa popolare
 nonviolenta presso le edizioni Fuorithema di Bologna, Editoria Universitaria di Venezia e Qualevita di Sulmona;
-è stato curatore della serie dei 32 Quaderni della difesa popolare nonviolenta, ed. La Meridiana, Molfetta;
+è stato curatore della serie dei 32 Quaderni della difesa popolare nonviolenta, ed. La Meridiana, Molfetta (BA);
 ha pubblicato _Storia e tecniche della nonviolenta_, Laurenziana, Napoli, 2006 e
 _La difesa popolare nonviolenta_, EGA, Torino, 2006.
 
 Ha proposto una sua rifondazione della vita interiore in termini nonviolenti: _Atti di vita Interiore_, Qualevita, Sulmona;
 _Le rivoluzioni nonviolente dell’ultimo secolo. I fatti e le interpretazioni_, Nuova Cultura, Roma, 2010.
+
+Maggiori informazioni: [Wikipedia](https://it.wikipedia.org/wiki/Antonino_Drago_(pacifista))

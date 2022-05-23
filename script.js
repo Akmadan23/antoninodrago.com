@@ -10,21 +10,25 @@ function show(id) {
     var x = document.getElementsByClassName("main");
     var menu = document.getElementById("side-menu");
 
+    // hiding each .main element
     for (var i = 0; i < x.length; i++) {
         x[i].style.display = "none";
     }
 
+    // displaying the selected section
     document.getElementById(id).style.display = "block";
 
+    // hiding the side menu if visible
     if (menu.className == "in") {
         toggleSideMenu();
     }
 
+    // updating url with id name
     var url = window.location.href.split("#");
     window.location.href = url[0] + "#" + id;
 }
 
-function toggleSideMenu(icon) {
+function toggleSideMenu() {
     var menu = document.getElementById("side-menu");
     var icon = document.getElementById("icon");
 
@@ -32,9 +36,7 @@ function toggleSideMenu(icon) {
         menu.className = "out";
         icon.classList.remove("fa-times");
         icon.classList.add("fa-bars");
-    }
-
-    else {
+    } else {
         menu.className = "in";
         icon.classList.remove("fa-bars");
         icon.classList.add("fa-times");
@@ -50,9 +52,7 @@ function switchLang() {
         if (it[i].style.display == "none") {
             en[i].style.display = "none";
             it[i].style.display = "block";
-        }
-
-        else {
+        } else {
             it[i].style.display = "none";
             en[i].style.display = "block";
         }
