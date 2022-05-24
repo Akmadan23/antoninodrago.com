@@ -1,5 +1,5 @@
 @import "colors.css";
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
 
 html * {
     margin: 0;
@@ -14,7 +14,7 @@ html * {
 body {
     color: var(--text);
     background-color: var(--background);
-    font-family: "Roboto", sans-serif;
+    font-family: Roboto, sans-serif;
 }
 
 h2 {
@@ -104,11 +104,6 @@ li {
 
 .dropdown:hover .dropdown-content {
     display: block;
-}
-
-.main img {
-    margin: 16px;
-    float: right;
 }
 
 .inner-menu {
@@ -224,10 +219,6 @@ li {
         float: right;
     }
 
-    .main img {
-        width: 200px;
-    }
-
     @media screen and (min-width: 1251px) {
         h1 {
             font-size: 32px;
@@ -312,10 +303,6 @@ li {
     .main {
         left: 5%;
         width: 90%;
-    }
-
-    .main img {
-        width: 120px;
     }
 
     .dropdown {
