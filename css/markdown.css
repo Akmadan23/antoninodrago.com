@@ -1,0 +1,7 @@
+@import "color.css";
+
+img {
+    width: 160px;
+    margin: 20px;
+    float: right;
+}

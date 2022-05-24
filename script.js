@@ -1,3 +1,11 @@
+// setting css file for zero-md
+window.ZeroMdConfig = {
+    cssUrls: [
+        "https://cdn.jsdelivr.net/gh/sindresorhus/github-markdown-css@4/github-markdown.min.css",
+        "css/markdown.css"
+    ]
+}
+
 function start() {
     var url = new URL(window.location.href);
     var id = url.hash.replace("#", "");
