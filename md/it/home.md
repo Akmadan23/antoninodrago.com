@@ -1,5 +1,7 @@
 # Home page
 
+![test](../../img/ad1.jpg)
+
 Nato a Rimini il 5 maggio 1938, sposato nel 1962 con Vanna Trevisan, ha quattro figli e quattro nipoti.
 
 Laureato in Fisica nel 1961 presso l'Università di Pisa, borsista presso la Scuola Normale Superiore di Pisa,

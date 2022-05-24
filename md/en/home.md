@@ -1,5 +1,7 @@
 # Home page
 
+![test](../../img/ad1.jpg)
+
 Born in Italy (Rimini) in 1938, graduated in Physics at University of Pisa in 1961, worked in Cybernetics,
 Mathematical Logic, Philosophy of Science, History of Science, Science Education, Psychology and Sociology.
 He was associate professor of History of Physics at Naples University “Federico II”.
