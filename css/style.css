@@ -17,30 +17,6 @@ body {
     font-family: Roboto, sans-serif;
 }
 
-h2 {
-    color: var(--accentMedium);
-    padding-bottom: 16px;
-}
-
-p {
-    text-indent: 16px;
-    padding-bottom: 8px;
-}
-
-p.quote {
-    background-color: white;
-    padding: 16px;
-    margin: 16px 64px 16px 64px;
-    text-indent: 0px;
-    border-radius: 12px;
-    display: inline-block;
-}
-
-li {
-    margin-left: 32px;
-    padding-bottom: 8px;
-}
-
 #side-menu h3 {
     color: var(--grey2);
     font-size: 24px;
@@ -194,7 +170,6 @@ li {
 .main {
     position: relative;
     padding-top: 80px;
-    display: none;
 }
 
 @media screen and (min-width: 721px) {
