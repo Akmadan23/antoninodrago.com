@@ -10,24 +10,20 @@ function start() {
     var url = new URL(window.location.href);
     var id = url.hash.replace("#", "");
 
+    // updating visible section only if id is not empty
     if (id) show(id);
-    else show("home");
 }
 
 function show(id) {
-    var x = document.getElementsByClassName("main");
-    var menu = document.getElementById("side-menu");
-
-    // hiding each .main element
-    for (var i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
+    // replacing each zero-md src attribute with the selected section
+    for (var item of document.getElementsByClassName("md")) {
+        var old_src = item.src.split("/");
+        old_src[2] = id + ".md";
+        item.src = old_src.join("/");
     }
 
-    // displaying the selected section
-    document.getElementById(id).style.display = "block";
-
     // hiding the side menu if visible
-    if (menu.className == "in") {
+    if (document.getElementById("side-menu").className == "in") {
         toggleSideMenu();
     }
 
@@ -54,9 +50,8 @@ function toggleSideMenu() {
 function switchLang() {
     var it = document.getElementsByClassName("it");
     var en = document.getElementsByClassName("en");
-    var x = Math.max(it.length, en.length);
 
-    for (var i = 0; i < x; i++) {
+    for (var i = 0; i < it.length; i++) {
         if (it[i].style.display == "none") {
             en[i].style.display = "none";
             it[i].style.display = "block";
