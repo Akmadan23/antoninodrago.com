@@ -1,4 +1,82 @@
-@import "color.css";
+.markdown-body {
+    color: var(--text);
+    font-size: 16px;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+.markdown-body > :first-child {
+    margin-top: 0 !important;
+}
+
+.markdown-body > :last-child {
+    margin-bottom: 0 !important;
+}
+
+a {
+    color: var(--accentLight);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+h1, h2 {
+    border-bottom: 1px solid var(--grey2);
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+ol, ul {
+    padding-left: 32px;
+    margin-bottom: 16px;
+}
+
+ol ol, ul ol {
+    list-style-type: lower-roman;
+}
+
+ol ol, ol ul, ul ol, ul ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ol ol ol, ol ul ol, ul ol ol, ul ul ol {
+    list-style-type: lower-alpha;
+}
+
+code {
+    margin: 0;
+    padding: 4px;
+    font-size: 85%;
+    border-radius: 4px;
+    background-color: rgba(27,31,35,.1);
+}
+
+blockquote {
+    margin: 0;
+    padding: 0 1em;
+    color: #6a737d;
+    margin-bottom: 16px;
+    border-left: .25em solid #dfe2e5;
+}
+
+blockquote > :first-child {
+    margin-top: 0;
+}
+
+blockquote > :last-child {
+    margin-bottom: 0;
+}
 
 img {
     width: 160px;

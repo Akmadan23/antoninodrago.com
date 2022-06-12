@@ -1,9 +1,7 @@
 // setting css file for zero-md
 window.ZeroMdConfig = {
-    cssUrls: [
-        "https://cdn.jsdelivr.net/gh/sindresorhus/github-markdown-css@4/github-markdown.min.css",
-        "css/markdown.css"
-    ]
+    // reference - https://cdn.jsdelivr.net/gh/sindresorhus/github-markdown-css@4/github-markdown.css
+    cssUrls: ["css/markdown.css"]
 }
 
 function start() {
