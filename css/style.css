@@ -308,25 +308,3 @@ body {
         display: block;
     }
 }
-
-/*================ SCROLLBAR ================*/
-
-/* Scrollbar width */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-/* Scrollbar track */
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px var(--background); 
-}
-
-/* Scrollbar handle */
-::-webkit-scrollbar-thumb {
-    background: var(--accentMedium);
-}
-
-/* Scrollbar handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: var(--accentLight); 
-}
