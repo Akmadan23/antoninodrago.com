@@ -14,16 +14,16 @@
 </head>
 
 <body onload="start()">
-    <div class="page">
-        <div class="header-wrap">
-            <div class="header">
+    <div id="page">
+        <div id="header-wrap">
+            <div id="header">
                 <h1>Antonino Drago</h1>
 
-                <div class="menu-icon">
+                <div id="menu-icon">
                     <i class="fas fa-bars fa-2x" id="icon" onclick="toggleSideMenu()"></i>
                 </div>
 
-                <div onclick="switchLang()" title="Switch language" class="flags">
+                <div onclick="switchLang()" title="Switch language" id="flags">
                     <div class="it">
                         <div class="flag2"><img src="img/uk.png"/></div>
                         <div class="flag1"><img src="img/it.png"/></div>
@@ -35,7 +35,7 @@
                     </div><!-- .en -->
                 </div><!-- .flags -->
 
-                <div class="menu">
+                <div id="menu">
                     <div class="inner-menu it">
                         <div class="dropdown">
                             <span onclick="show('home')">Home</span>
@@ -81,15 +81,15 @@
                             </div>
                         </div><!-- .dropdown -->
                     </div><!-- .en -->
-                </div><!-- .menu -->
-            </div><!-- .header -->
-        </div><!-- .header-wrap -->
+                </div><!-- #menu -->
+            </div><!-- #header -->
+        </div><!-- #header-wrap -->
 
-        <div class="main">
+        <div id="main">
             <zero-md class="md it" src="md/it/home.md"></zero-md>
             <zero-md class="md en" src="md/en/home.md"></zero-md>
             <br><br>
-        </div>
+        </div><!-- #main -->
 
         <div id="side-menu">
             <div class="it">
@@ -118,6 +118,6 @@
                 <h4 onclick="show('pub3')">Unpublished</h4>
             </div><!-- .en -->
         </div><!-- #side-menu -->
-    </div><!--#page-->
+    </div><!-- #page -->
 </body>
 </html>
