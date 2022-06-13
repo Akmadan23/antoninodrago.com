@@ -1,9 +1,9 @@
 :root {
-    /* Colors */
     --text:         #161616;
     --background:   #FFF5DB;
-    --grey1:        #242424;
-    --grey2:        #FAFAFA;
+    --greyLight:    #FAFAFA;
+    --greyMedium:   #BABABA;
+    --greyDark:     #2A2A2A;
     --accentLight:  #C40000;
     --accentMedium: #A40000;
     --accentDark:   #840000;
