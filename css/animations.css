@@ -1,0 +1,31 @@
+@keyframes in {
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes in {
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes out {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes out {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}

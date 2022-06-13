@@ -1,4 +1,5 @@
 @import "colors.css";
+@import "animations.css";
 @import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap";
 
 html * {
@@ -317,38 +318,3 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--accentLight); 
 }
-
-/*================ ANIMATIONS ================*/
-
-@keyframes in {
-    100% {
-        transform: translateX(0);
-    }
-}
-
-@-webkit-keyframes in {
-    100% {
-        transform: translateX(0);
-    }
-}
-
-@keyframes out {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-@-webkit-keyframes out {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
